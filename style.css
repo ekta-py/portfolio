@@ -25,7 +25,7 @@ a{
 }
 /* section 1 */
 .section-1{
-    padding-top: 40vh;
+    padding-top: 30vh;
     text-align: center;
 }
 
@@ -82,11 +82,64 @@ a{
     transition: 0.3s;
 }
 
+.section-1 .avatar{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    object-fit: cover;
+    border: 2px solid yellow;
+    position: relative;
+    left: 280px;
+    
+}
+.section-1 .avatar img{
+    height: auto;
+    width: 100%;
+    transition: 0.5s all;
+}
+.section-1 .avatar img:hover{
+    transform: scale(1.09) rotate(3deg);
+}
+
 .white:hover{
     position: relative;
     padding-left: 10px;
 }
+.cv{
+    background-color: rgb(217, 255, 0);
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.01px solid rgb(217, 255, 0);
+    border-right-width: 4px;
+    border-right-color: red;
+    transition: 0.5s all;
+    animation: slideUp 5s infinite ease-out;
+    transform-origin: left;
+    cursor: pointer;
+}
 
+@keyframes slideUp {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 200px;
+    }
+}
+.cv .resume p{
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
 /* media queres */
 @media(max-width:780px){
     .grid-2{
@@ -101,4 +154,10 @@ a{
         padding-left: 1.5rem;
         padding-top: 2rem;
     }
+    .section-1 .avatar {
+        display: none;
+        visibility: hidden;
+    }
 }
+
+
