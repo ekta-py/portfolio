@@ -127,6 +127,10 @@ a{
     cursor: pointer;
 }
 
+.cv:hover{
+    animation: stop 5s infinite ease-out;
+}
+
 @keyframes slideUp {
     from{
         width: 0px;
